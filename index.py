@@ -11,12 +11,6 @@ st.set_page_config(layout='wide')
 file_path = 'stock_market_index.xlsx'
 xls = pd.ExcelFile(file_path)
 
-try:
-    xls = pd.ExcelFile(file_path)
-except FileNotFoundError:
-    st.error(f"The file '{file_path}' was not found. Please ensure it is uploaded or placed in the correct directory.")
-    st.stop()
-
 # Function to extract 'Date' and 'Close' columns from a sheet, handling non-breaking spaces
 def extract_date_close(sheet_name):
     df = pd.read_excel(xls, sheet_name)

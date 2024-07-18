@@ -1,6 +1,6 @@
 pandas
-plotly.graph_objects
-matplotlib.pyplot
+plotly
+matplotlib
 streamlit
 datetime
 altair

@@ -1,1 +1,6 @@
+pandas
+plotly.graph_objects
+matplotlib.pyplot
 streamlit
+datetime
+altair
